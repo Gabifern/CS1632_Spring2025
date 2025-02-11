@@ -50,12 +50,21 @@ public class DeathStarTest {
 	@Test
 	public void testShootPlanetUnit() {
 		// TODO: Fill in!
-		//mock the planet since deathStar is what is calling it
-		planet = new Planet(10);
+		//mock the planet since deathStar is what is calling it and planet is the dependency
+		//we want to test the real implementation of deathStar and not have planet confusing it
 		deathStar = new DeathStar();
+		Planet p = Mockito.mock(Planet.class);
 
-		deathStar.shoot(planet);
+		//define mock behavior
+		Mockito.when(p.toString()).thenReturn("Wimpy planet"); // Mocking toString() to return expected string
+		Mockito.when(p.getHitPoints()).thenReturn(10); //mocking hit points method, planet created with 10 hit points
+		Mockito.doNothing().when(p).damage(100); //mocking void method
 
+		//call the shoot
+		String result = deathStar.shoot(p);
 
+		//verify interactions
+		Mockito.verify(p).damage(100);
+		assertEquals("Wimpy planet was hit by the superlaser!", result);
 	}
 }

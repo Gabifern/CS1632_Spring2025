@@ -72,6 +72,8 @@ public class SquareTest {
 		verify(num).setVal(9);
 
 	} //use the mocks here by making Mockito object and verify
+	//we want to test the square class so we use real but if we used real 
+	//for both of them then it would be testing both number and square
 
 	// Unit Test: In unit testing, we isolate the method or unit of code under test 
 	// and verify its behavior by controlling the dependencies it interacts with. 
