@@ -18,10 +18,22 @@ public class DeathStarTest {
 	 *                 Planet receives a damage of 100 hit points
 	 * </pre>
 	 */
+
+	DeathStar deathStar;
+	Planet planet;
+
 	@Test
 	public void testShootPlanetIntegration() {
 		// TODO: Fill in!
-		fail();
+		planet = new Planet(10); 
+		deathStar = new DeathStar();
+
+		String result = deathStar.shoot(planet);
+
+		assertEquals("Wimpy planet was hit by the superlaser!", result);
+		assertEquals(-90, planet.getHitPoints()); //make sure it is 100 points damage so 10-100 = -90
+
+		//integration tests should be on the real objects
 	}
 
 	/**
@@ -38,6 +50,12 @@ public class DeathStarTest {
 	@Test
 	public void testShootPlanetUnit() {
 		// TODO: Fill in!
-		fail();
+		//mock the planet since deathStar is what is calling it
+		planet = new Planet(10);
+		deathStar = new DeathStar();
+
+		deathStar.shoot(planet);
+
+
 	}
 }
