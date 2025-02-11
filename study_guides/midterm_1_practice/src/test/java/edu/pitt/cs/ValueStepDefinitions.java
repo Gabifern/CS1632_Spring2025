@@ -7,4 +7,7 @@ import static org.junit.Assert.*;
 
 public class ValueStepDefinitions {
 	// TODO: Fill in!
+	private Value value;
+
+	@Given
 }
