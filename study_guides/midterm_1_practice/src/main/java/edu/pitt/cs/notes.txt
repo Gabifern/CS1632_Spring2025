@@ -1,0 +1,20 @@
+import static org.mockito.Mockito.*;
+
+import java.lang.reflect.Method;
+
+class MyService {
+    private String secretMethod() {
+        return "Secret";
+    }
+}
+
+public class ReflectionMockTest {
+    public static void main(String[] args) throws Exception {
+        MyService service = mock(MyService.class);
+        Method method = MyService.class.getDeclaredMethod("secretMethod");
+        method.setAccessible(true);
+        when(method.invoke(service)).thenReturn("Mocked Secret");
+
+        System.out.println(method.invoke(service)); // prints "Mocked Secret"
+    }
+}

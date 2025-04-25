@@ -26,20 +26,6 @@ public class SquareTest {
 	Square square;
 	Number number;
 
-	// @Before
-	// public void setUp() throws Exception {
-	// 	//create square and number types
-	// 	square = new Square();
-	// 	number = new Number();
-	// }
-
-	// @After
-	// public void tearDown() throws Exception {
-	// 	//clean up the objects
-	// 	square = null;
-	// 	number = null;
-	// }
-
 	@Test
 	public void testSetSquaredIntegration() {
 		// TODO: Fill in!
@@ -48,7 +34,7 @@ public class SquareTest {
 		number = new Number();
 
 		square.setSquared(number, 3);
-		assertEquals(9, number.getVal()); //need to get the value since it's sending out object location
+		assertEquals(9, number.getVal()); //need to get the value (otherwise will be location)
 	}
 
 	/**

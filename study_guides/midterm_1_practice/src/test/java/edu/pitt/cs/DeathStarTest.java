@@ -56,9 +56,9 @@ public class DeathStarTest {
 		Planet p = Mockito.mock(Planet.class);
 
 		//define mock behavior
-		Mockito.when(p.toString()).thenReturn("Wimpy planet"); // Mocking toString() to return expected string
-		Mockito.when(p.getHitPoints()).thenReturn(10); //mocking hit points method, planet created with 10 hit points
-		Mockito.doNothing().when(p).damage(100); //mocking void method
+		Mockito.when(p.toString()).thenReturn("Wimpy planet"); // mocking toString() to return expected string
+		Mockito.when(p.getHitPoints()).thenReturn(10); // mocking hit points method, planet created with 10 hit points
+		Mockito.doNothing().when(p).damage(100); // mocking void method
 
 		//call the shoot
 		String result = deathStar.shoot(p);
