@@ -81,7 +81,6 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * Class 1
   * Lecture: Performance Testing (READING: AFIST, Chapter 19)
   * Assignments due before class
-    * Deliverable 2
     * Listen to Writing Testable Code Lecture (READING: AFIST, Chapter 16)
 
 * Class 2
@@ -93,11 +92,11 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 1
   * Lecture: Stochastic and Property-Based Testing Lecture (READING: AFIST, Chapter 18)
+  * Assignments due before class
+    * Deliverable 2
 
 * Class 2
   * In-class exercise: [Supplementary Exercise 2: Property-based Testing](exercises/Supplement2)
-  * Assignments due before class
-    * Listen to Stochastic and Property-Based Testing Lecture (READING: AFIST, Chapter 18)
 
 ## WEEK 9 (Week of 3 MAR)
 
@@ -157,7 +156,15 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 15 (Week of 14 APR)
 
-* Industry Guest Lectures (TBD)
+* Class 1: [Aerotech](https://www.aerotech.com/) guest lecture
+  * Speaker: Nate Homitsky, Vice President of Information [LinkedIn](https://www.linkedin.com/in/nate-homitsky-6912a5a3/)
+  * Speaker: Ross Kabus, Software Engineering Team Lead [LinkedIn](https://www.linkedin.com/in/rkabus/)
+
+* Class 2: [CGI](https://www.cgi.com/) guest lecture
+  * Speaker: Laks Ranganathan, CGI Partner | Director - Consulting Services [LinkedIn](https://www.linkedin.com/in/lakshmi-narasimhan-yeri-ranganathan-4b7b874b/)
+  * Speaker: Sharath Chandran, Director, Consulting Expert [LinkedIn](https://www.linkedin.com/in/sharath-chandran-6a9b7110/)
+  * Speaker: Satish Dupati, Senior Consultant [LinkedIn](https://www.linkedin.com/in/satishdupati/)
+
 
 ## WEEK 16 (Week of 21 APR)
 
@@ -165,6 +172,16 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
   * Lecture: Midterm 2 Q&A based on the [study guide](study_guides/midterm_2_study_guide.md)
 
 * Midterm 2 on final exam date.
+  * 1100 Section (1:00 - 2:15 Section): 4/28 (Monday) 8:00 - 10:00 AM at G36 Benedum Hall
+  * 1130 Section (4:00 - 5:15 Section): 4/25 (Friday) 10:00 AM - 12:00 PM at IS 305
+  * Steps:
+    1. Do TopHat attendance at start of class.  If no attendance, grade will not be counted.
+    2. Click on assignment "Midterm 2" on GradeScope (will appear at start of class).
+    3. Click on the "Start Assignment" button.  There will be a count down timer on the top right once you start.
+    4. Finish and submit the exam within 75 minutes.  You can submit multiple times.
+  * Optionally, you can try the "Sample GradeScope Exam (For Practice)" to get used to the mechanics.
+  * Exam is open book (Lecture slides, notes, textbook, exercises and deliverables, use of Java Development Kit or VSCode are permitted).
+  * Exam is individual work (use of generative AI is banned).
 
 ## WEEK 17 (Week of 28 APR)
 
