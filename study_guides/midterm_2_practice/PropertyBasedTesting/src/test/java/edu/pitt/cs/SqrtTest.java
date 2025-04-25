@@ -25,5 +25,14 @@ public class SqrtTest {
 	public void testSqrt(@InRange(minDouble = 0, maxDouble = 25) double d) {
 		double ret = Math.sqrt(d);
 		// TODO: Fill in
+		//express invariants - properties that should always hold true for any valid input in the range 0 <= d <= 25
+		//for all d >= 0, the sq root function should satisfy these key invariants
+		//non-negativity: math.sqrt(d) >= 0, math.sqrt(d)^2 = d, if x < y, then sqrt(x) < sqrt(y)
+
+		assertThat(ret, greaterThanOrEqualTo(0.0));
+		//invariant 1 - result is not negative
+
+		assertThat(ret * ret, closeTo(d, 1e010));
+		//invariant 2 - squaring the result returns the OG number 
 	}
 }

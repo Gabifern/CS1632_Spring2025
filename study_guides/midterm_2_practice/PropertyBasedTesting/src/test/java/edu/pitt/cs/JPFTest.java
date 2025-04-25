@@ -17,12 +17,15 @@ import static org.hamcrest.Matchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+
 public class JPFTest extends TestJPF {
 	private static int x;
 	private static int y;
 
 	public static void setUp() {
 		// TODO: Fill in. Test all x, y where -10 <= x <= 10 and -10 <= y <= 10.
+		x = Verify.getInt(-10, 10);
+		y = Verify.getInt(-10, 10);
 	}
 
 	@Test
@@ -42,6 +45,15 @@ public class JPFTest extends TestJPF {
 
 		int ret = IntegerOps.square(x);
 		// TODO: Fill in.
+
+		//invariants
+		// square(x) >= 0
+		// square(x) = x*x
+		// square(x) == square(-x)
+
+		assertThat(ret, greaterThanOrEqualTo(0));
+		assertEquals(x * x, ret);
+		assertEquals(IntegerOps.square(-x), ret);
 	}
 
 	@Test
@@ -61,6 +73,12 @@ public class JPFTest extends TestJPF {
 
 		int ret = IntegerOps.add(x, y);
 		// TODO: Fill in.
+
+		// Invariants:
+		// 1. add(x, y) == x + y
+		// 2. add(x, y) == add(y, x)
+		assertEquals(x + y, ret);
+		assertEquals(IntegerOps.add(y, x), ret);
 	}
 
 }
