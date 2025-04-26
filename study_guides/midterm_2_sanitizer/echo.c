@@ -10,10 +10,26 @@ int main(int argc, char **argv)
     }
     char *str = argv[1];
     char buf[5];
-    strcpy(buf, str); //telling us this is the issue!
+    strcpy(buf, str);
     printf("%s\n", buf);
     return 0;
 }
+// #include <stdlib.h>
+// #include <stdio.h>
+// #include <string.h>
+
+// int main(int argc, char **argv)
+// {
+//     if (argc != 2) {
+//         printf("Usage: echo <string_you_want_to_echo>\n");
+//         return 0;
+//     }
+//     char *str = argv[1];
+//     char buf[5];
+//     strcpy(buf, str); //telling us this is the issue!
+//     printf("%s\n", buf);
+//     return 0;
+// }
 
 //What it’s doing:
 //Takes a single argument from the command line (argv[1]).
